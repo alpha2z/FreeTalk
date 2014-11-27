@@ -1,0 +1,615 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9B7527351A24930F00FA0023 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7527341A24930F00FA0023 /* SettingViewController.swift */; };
+		9B7527391A24934200FA0023 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7527381A24934200FA0023 /* ChatViewController.swift */; };
+		9B75273B1A24935700FA0023 /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B75273A1A24935700FA0023 /* ChatTableViewCell.swift */; };
+		9B75273D1A2495D500FA0023 /* FriendsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B75273C1A2495D500FA0023 /* FriendsTableViewCell.swift */; };
+		9B75273F1A24960D00FA0023 /* FriendsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B75273E1A24960D00FA0023 /* FriendsTableViewController.swift */; };
+		9B7527411A24BF2300FA0023 /* RecentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7527401A24BF2300FA0023 /* RecentTableViewController.swift */; };
+		9B7527451A24BFE900FA0023 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7527441A24BFE900FA0023 /* MainNavigationController.swift */; };
+		9B7527491A24C49300FA0023 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7527481A24C49300FA0023 /* ProfileViewController.swift */; };
+		9B75274F1A24C7B000FA0023 /* myprofile_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B75274E1A24C7B000FA0023 /* myprofile_selected.png */; };
+		9B7527511A24CA1300FA0023 /* login_back.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B7527501A24CA1300FA0023 /* login_back.png */; };
+		9B7527531A24CEFA00FA0023 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7527521A24CEFA00FA0023 /* LoginViewController.swift */; };
+		9B8493E91A237CFD007BF51C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8493E81A237CFD007BF51C /* AppDelegate.swift */; };
+		9B8493EC1A237CFD007BF51C /* FishChat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9B8493EA1A237CFD007BF51C /* FishChat.xcdatamodeld */; };
+		9B8493F11A237CFD007BF51C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B8493EF1A237CFD007BF51C /* Main.storyboard */; };
+		9B8493F31A237CFD007BF51C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B8493F21A237CFD007BF51C /* Images.xcassets */; };
+		9B8493F61A237CFD007BF51C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B8493F41A237CFD007BF51C /* LaunchScreen.xib */; };
+		9B8494021A237CFE007BF51C /* FishChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8494011A237CFE007BF51C /* FishChatTests.swift */; };
+		9BB229F01A27695F007C2EE9 /* FromType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB229EF1A27695F007C2EE9 /* FromType.swift */; };
+		9BB7A07D1A26235100D9A7F1 /* RecentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB7A07B1A26235100D9A7F1 /* RecentTableViewCell.swift */; };
+		9BB7A07E1A26235100D9A7F1 /* RecentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BB7A07C1A26235100D9A7F1 /* RecentTableViewCell.xib */; };
+		9BFEB2A61A2774FF004C7294 /* CenterTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFEB2A51A2774FF004C7294 /* CenterTabBarController.swift */; };
+		9BFEB2AD1A277855004C7294 /* chat.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BFEB2A71A277855004C7294 /* chat.png */; };
+		9BFEB2AE1A277855004C7294 /* chat@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BFEB2A81A277855004C7294 /* chat@2x.png */; };
+		9BFEB2AF1A277855004C7294 /* contact_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BFEB2A91A277855004C7294 /* contact_selected.png */; };
+		9BFEB2B01A277855004C7294 /* contact_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BFEB2AA1A277855004C7294 /* contact_selected@2x.png */; };
+		9BFEB2B11A277855004C7294 /* setting.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BFEB2AB1A277855004C7294 /* setting.png */; };
+		9BFEB2B21A277855004C7294 /* setting@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BFEB2AC1A277855004C7294 /* setting@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9B8493FC1A237CFD007BF51C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9B8493DB1A237CFD007BF51C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B8493E21A237CFD007BF51C;
+			remoteInfo = FishChat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9B7527341A24930F00FA0023 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingViewController.swift; path = setting/SettingViewController.swift; sourceTree = "<group>"; };
+		9B7527381A24934200FA0023 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChatViewController.swift; path = chat/ChatViewController.swift; sourceTree = "<group>"; };
+		9B75273A1A24935700FA0023 /* ChatTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChatTableViewCell.swift; path = chat/ChatTableViewCell.swift; sourceTree = "<group>"; };
+		9B75273C1A2495D500FA0023 /* FriendsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FriendsTableViewCell.swift; path = friends/FriendsTableViewCell.swift; sourceTree = "<group>"; };
+		9B75273E1A24960D00FA0023 /* FriendsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FriendsTableViewController.swift; path = friends/FriendsTableViewController.swift; sourceTree = "<group>"; };
+		9B7527401A24BF2300FA0023 /* RecentTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecentTableViewController.swift; path = recent/RecentTableViewController.swift; sourceTree = "<group>"; };
+		9B7527441A24BFE900FA0023 /* MainNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
+		9B7527481A24C49300FA0023 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = profile/ProfileViewController.swift; sourceTree = "<group>"; };
+		9B75274E1A24C7B000FA0023 /* myprofile_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = myprofile_selected.png; path = FishChat/resource/myprofile_selected.png; sourceTree = "<group>"; };
+		9B7527501A24CA1300FA0023 /* login_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = login_back.png; path = FishChat/resource/login_back.png; sourceTree = "<group>"; };
+		9B7527521A24CEFA00FA0023 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = login/LoginViewController.swift; sourceTree = "<group>"; };
+		9B8493E31A237CFD007BF51C /* FishChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FishChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B8493E71A237CFD007BF51C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B8493E81A237CFD007BF51C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9B8493EB1A237CFD007BF51C /* FishChat.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FishChat.xcdatamodel; sourceTree = "<group>"; };
+		9B8493F01A237CFD007BF51C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9B8493F21A237CFD007BF51C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9B8493F51A237CFD007BF51C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		9B8493FB1A237CFD007BF51C /* FishChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FishChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B8494001A237CFE007BF51C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B8494011A237CFE007BF51C /* FishChatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishChatTests.swift; sourceTree = "<group>"; };
+		9BB229EF1A27695F007C2EE9 /* FromType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FromType.swift; path = utility/FromType.swift; sourceTree = "<group>"; };
+		9BB7A07B1A26235100D9A7F1 /* RecentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecentTableViewCell.swift; path = recent/RecentTableViewCell.swift; sourceTree = "<group>"; };
+		9BB7A07C1A26235100D9A7F1 /* RecentTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RecentTableViewCell.xib; path = recent/RecentTableViewCell.xib; sourceTree = "<group>"; };
+		9BFEB2A51A2774FF004C7294 /* CenterTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CenterTabBarController.swift; path = center/CenterTabBarController.swift; sourceTree = "<group>"; };
+		9BFEB2A71A277855004C7294 /* chat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = chat.png; path = FishChat/resource/chat.png; sourceTree = "<group>"; };
+		9BFEB2A81A277855004C7294 /* chat@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "chat@2x.png"; path = "FishChat/resource/chat@2x.png"; sourceTree = "<group>"; };
+		9BFEB2A91A277855004C7294 /* contact_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = contact_selected.png; path = FishChat/resource/contact_selected.png; sourceTree = "<group>"; };
+		9BFEB2AA1A277855004C7294 /* contact_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "contact_selected@2x.png"; path = "FishChat/resource/contact_selected@2x.png"; sourceTree = "<group>"; };
+		9BFEB2AB1A277855004C7294 /* setting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = setting.png; path = FishChat/resource/setting.png; sourceTree = "<group>"; };
+		9BFEB2AC1A277855004C7294 /* setting@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "setting@2x.png"; path = "FishChat/resource/setting@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9B8493E01A237CFD007BF51C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B8493F81A237CFD007BF51C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9B75272B1A24928C00FA0023 /* chat */ = {
+			isa = PBXGroup;
+			children = (
+				9B7527311A2492DA00FA0023 /* image */,
+				9B7527301A2492CC00FA0023 /* text */,
+				9B75272F1A2492C400FA0023 /* voice */,
+				9B7527381A24934200FA0023 /* ChatViewController.swift */,
+				9B75273A1A24935700FA0023 /* ChatTableViewCell.swift */,
+			);
+			name = chat;
+			sourceTree = "<group>";
+		};
+		9B75272C1A24929100FA0023 /* friends */ = {
+			isa = PBXGroup;
+			children = (
+				9B75273C1A2495D500FA0023 /* FriendsTableViewCell.swift */,
+				9B75273E1A24960D00FA0023 /* FriendsTableViewController.swift */,
+			);
+			name = friends;
+			sourceTree = "<group>";
+		};
+		9B75272D1A2492A100FA0023 /* setting */ = {
+			isa = PBXGroup;
+			children = (
+				9B7527341A24930F00FA0023 /* SettingViewController.swift */,
+			);
+			name = setting;
+			sourceTree = "<group>";
+		};
+		9B75272E1A2492AE00FA0023 /* recent */ = {
+			isa = PBXGroup;
+			children = (
+				9B7527401A24BF2300FA0023 /* RecentTableViewController.swift */,
+				9BB7A07B1A26235100D9A7F1 /* RecentTableViewCell.swift */,
+				9BB7A07C1A26235100D9A7F1 /* RecentTableViewCell.xib */,
+			);
+			name = recent;
+			sourceTree = "<group>";
+		};
+		9B75272F1A2492C400FA0023 /* voice */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = voice;
+			sourceTree = "<group>";
+		};
+		9B7527301A2492CC00FA0023 /* text */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = text;
+			sourceTree = "<group>";
+		};
+		9B7527311A2492DA00FA0023 /* image */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = image;
+			sourceTree = "<group>";
+		};
+		9B7527471A24C47500FA0023 /* detail */ = {
+			isa = PBXGroup;
+			children = (
+				9B7527481A24C49300FA0023 /* ProfileViewController.swift */,
+			);
+			name = detail;
+			sourceTree = "<group>";
+		};
+		9B75274A1A24C5C400FA0023 /* login */ = {
+			isa = PBXGroup;
+			children = (
+				9B7527521A24CEFA00FA0023 /* LoginViewController.swift */,
+			);
+			name = login;
+			sourceTree = "<group>";
+		};
+		9B75274D1A24C79300FA0023 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				9BFEB2A71A277855004C7294 /* chat.png */,
+				9BFEB2A81A277855004C7294 /* chat@2x.png */,
+				9BFEB2A91A277855004C7294 /* contact_selected.png */,
+				9BFEB2AA1A277855004C7294 /* contact_selected@2x.png */,
+				9BFEB2AB1A277855004C7294 /* setting.png */,
+				9BFEB2AC1A277855004C7294 /* setting@2x.png */,
+				9B7527501A24CA1300FA0023 /* login_back.png */,
+				9B75274E1A24C7B000FA0023 /* myprofile_selected.png */,
+			);
+			name = resource;
+			sourceTree = "<group>";
+		};
+		9B8493DA1A237CFD007BF51C = {
+			isa = PBXGroup;
+			children = (
+				9B75274D1A24C79300FA0023 /* resource */,
+				9B8493E51A237CFD007BF51C /* FishChat */,
+				9B8493FE1A237CFE007BF51C /* FishChatTests */,
+				9B8493E41A237CFD007BF51C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9B8493E41A237CFD007BF51C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9B8493E31A237CFD007BF51C /* FishChat.app */,
+				9B8493FB1A237CFD007BF51C /* FishChatTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9B8493E51A237CFD007BF51C /* FishChat */ = {
+			isa = PBXGroup;
+			children = (
+				9BFEB2A41A2774B0004C7294 /* center */,
+				9BB229EE1A276932007C2EE9 /* utility */,
+				9B75274A1A24C5C400FA0023 /* login */,
+				9B7527471A24C47500FA0023 /* detail */,
+				9B75272E1A2492AE00FA0023 /* recent */,
+				9B75272D1A2492A100FA0023 /* setting */,
+				9B75272C1A24929100FA0023 /* friends */,
+				9B75272B1A24928C00FA0023 /* chat */,
+				9B8493E81A237CFD007BF51C /* AppDelegate.swift */,
+				9B7527441A24BFE900FA0023 /* MainNavigationController.swift */,
+				9B8493EF1A237CFD007BF51C /* Main.storyboard */,
+				9B8493F21A237CFD007BF51C /* Images.xcassets */,
+				9B8493F41A237CFD007BF51C /* LaunchScreen.xib */,
+				9B8493EA1A237CFD007BF51C /* FishChat.xcdatamodeld */,
+				9B8493E61A237CFD007BF51C /* Supporting Files */,
+			);
+			path = FishChat;
+			sourceTree = "<group>";
+		};
+		9B8493E61A237CFD007BF51C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9B8493E71A237CFD007BF51C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9B8493FE1A237CFE007BF51C /* FishChatTests */ = {
+			isa = PBXGroup;
+			children = (
+				9B8494011A237CFE007BF51C /* FishChatTests.swift */,
+				9B8493FF1A237CFE007BF51C /* Supporting Files */,
+			);
+			path = FishChatTests;
+			sourceTree = "<group>";
+		};
+		9B8493FF1A237CFE007BF51C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9B8494001A237CFE007BF51C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9BB229EE1A276932007C2EE9 /* utility */ = {
+			isa = PBXGroup;
+			children = (
+				9BB229EF1A27695F007C2EE9 /* FromType.swift */,
+			);
+			name = utility;
+			sourceTree = "<group>";
+		};
+		9BFEB2A41A2774B0004C7294 /* center */ = {
+			isa = PBXGroup;
+			children = (
+				9BFEB2A51A2774FF004C7294 /* CenterTabBarController.swift */,
+			);
+			name = center;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9B8493E21A237CFD007BF51C /* FishChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B8494051A237CFE007BF51C /* Build configuration list for PBXNativeTarget "FishChat" */;
+			buildPhases = (
+				9B8493DF1A237CFD007BF51C /* Sources */,
+				9B8493E01A237CFD007BF51C /* Frameworks */,
+				9B8493E11A237CFD007BF51C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FishChat;
+			productName = FishChat;
+			productReference = 9B8493E31A237CFD007BF51C /* FishChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9B8493FA1A237CFD007BF51C /* FishChatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B8494081A237CFE007BF51C /* Build configuration list for PBXNativeTarget "FishChatTests" */;
+			buildPhases = (
+				9B8493F71A237CFD007BF51C /* Sources */,
+				9B8493F81A237CFD007BF51C /* Frameworks */,
+				9B8493F91A237CFD007BF51C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9B8493FD1A237CFD007BF51C /* PBXTargetDependency */,
+			);
+			name = FishChatTests;
+			productName = FishChatTests;
+			productReference = 9B8493FB1A237CFD007BF51C /* FishChatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9B8493DB1A237CFD007BF51C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = riddick;
+				TargetAttributes = {
+					9B8493E21A237CFD007BF51C = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					9B8493FA1A237CFD007BF51C = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 9B8493E21A237CFD007BF51C;
+					};
+				};
+			};
+			buildConfigurationList = 9B8493DE1A237CFD007BF51C /* Build configuration list for PBXProject "FishChat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9B8493DA1A237CFD007BF51C;
+			productRefGroup = 9B8493E41A237CFD007BF51C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9B8493E21A237CFD007BF51C /* FishChat */,
+				9B8493FA1A237CFD007BF51C /* FishChatTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9B8493E11A237CFD007BF51C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BFEB2AE1A277855004C7294 /* chat@2x.png in Resources */,
+				9B75274F1A24C7B000FA0023 /* myprofile_selected.png in Resources */,
+				9B8493F11A237CFD007BF51C /* Main.storyboard in Resources */,
+				9B7527511A24CA1300FA0023 /* login_back.png in Resources */,
+				9BFEB2AD1A277855004C7294 /* chat.png in Resources */,
+				9BFEB2B21A277855004C7294 /* setting@2x.png in Resources */,
+				9BFEB2B11A277855004C7294 /* setting.png in Resources */,
+				9B8493F61A237CFD007BF51C /* LaunchScreen.xib in Resources */,
+				9BFEB2B01A277855004C7294 /* contact_selected@2x.png in Resources */,
+				9BB7A07E1A26235100D9A7F1 /* RecentTableViewCell.xib in Resources */,
+				9BFEB2AF1A277855004C7294 /* contact_selected.png in Resources */,
+				9B8493F31A237CFD007BF51C /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B8493F91A237CFD007BF51C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9B8493DF1A237CFD007BF51C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B7527531A24CEFA00FA0023 /* LoginViewController.swift in Sources */,
+				9B7527351A24930F00FA0023 /* SettingViewController.swift in Sources */,
+				9B75273F1A24960D00FA0023 /* FriendsTableViewController.swift in Sources */,
+				9B7527451A24BFE900FA0023 /* MainNavigationController.swift in Sources */,
+				9BB7A07D1A26235100D9A7F1 /* RecentTableViewCell.swift in Sources */,
+				9B7527411A24BF2300FA0023 /* RecentTableViewController.swift in Sources */,
+				9BFEB2A61A2774FF004C7294 /* CenterTabBarController.swift in Sources */,
+				9BB229F01A27695F007C2EE9 /* FromType.swift in Sources */,
+				9B7527391A24934200FA0023 /* ChatViewController.swift in Sources */,
+				9B75273D1A2495D500FA0023 /* FriendsTableViewCell.swift in Sources */,
+				9B7527491A24C49300FA0023 /* ProfileViewController.swift in Sources */,
+				9B75273B1A24935700FA0023 /* ChatTableViewCell.swift in Sources */,
+				9B8493E91A237CFD007BF51C /* AppDelegate.swift in Sources */,
+				9B8493EC1A237CFD007BF51C /* FishChat.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B8493F71A237CFD007BF51C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B8494021A237CFE007BF51C /* FishChatTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9B8493FD1A237CFD007BF51C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9B8493E21A237CFD007BF51C /* FishChat */;
+			targetProxy = 9B8493FC1A237CFD007BF51C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9B8493EF1A237CFD007BF51C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9B8493F01A237CFD007BF51C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9B8493F41A237CFD007BF51C /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9B8493F51A237CFD007BF51C /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9B8494031A237CFE007BF51C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9B8494041A237CFE007BF51C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9B8494061A237CFE007BF51C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FishChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9B8494071A237CFE007BF51C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FishChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9B8494091A237CFE007BF51C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FishChatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FishChat.app/FishChat";
+			};
+			name = Debug;
+		};
+		9B84940A1A237CFE007BF51C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FishChatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FishChat.app/FishChat";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9B8493DE1A237CFD007BF51C /* Build configuration list for PBXProject "FishChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B8494031A237CFE007BF51C /* Debug */,
+				9B8494041A237CFE007BF51C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B8494051A237CFE007BF51C /* Build configuration list for PBXNativeTarget "FishChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B8494061A237CFE007BF51C /* Debug */,
+				9B8494071A237CFE007BF51C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B8494081A237CFE007BF51C /* Build configuration list for PBXNativeTarget "FishChatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B8494091A237CFE007BF51C /* Debug */,
+				9B84940A1A237CFE007BF51C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9B8493EA1A237CFD007BF51C /* FishChat.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9B8493EB1A237CFD007BF51C /* FishChat.xcdatamodel */,
+			);
+			currentVersion = 9B8493EB1A237CFD007BF51C /* FishChat.xcdatamodel */;
+			path = FishChat.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9B8493DB1A237CFD007BF51C /* Project object */;
+}

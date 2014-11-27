@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>5E59B524-2FCF-4833-A7E4-0E3D3720554C</string>
+	<key>IDESourceControlProjectName</key>
+	<string>FishChat</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>F4A8DF482DB290FB10D8F9A464E3DEA085BE240A</key>
+		<string>https://github.com/riddick2z/FreeTalk.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>FishChat/FishChat.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>F4A8DF482DB290FB10D8F9A464E3DEA085BE240A</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/riddick2z/FreeTalk.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>F4A8DF482DB290FB10D8F9A464E3DEA085BE240A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F4A8DF482DB290FB10D8F9A464E3DEA085BE240A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>FreeTalk</string>
+		</dict>
+	</array>
+</dict>
+</plist>
