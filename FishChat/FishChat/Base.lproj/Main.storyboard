@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="featured" id="OHF-Qa-WZP" userLabel="Setting"/>
+                    <tabBarItem key="tabBarItem" systemItem="more" id="OHF-Qa-WZP" userLabel="Setting"/>
                     <navigationItem key="navigationItem" title="Setting" id="jA8-Ii-mnq"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pRt-Cf-SYg" userLabel="First Responder" sceneMemberID="firstResponder"/>
