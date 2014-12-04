@@ -19,9 +19,9 @@ class MainNavigationController: UINavigationController {
         let pwd = NSUserDefaults.standardUserDefaults().stringForKey("passwd")
         
         if account == nil || pwd == nil {
-            self.performSegueWithIdentifier("toLogin", sender: self)
-//            var loginView = LoginViewController()
-//            self.pushViewController(loginView, animated: false)
+            let storyboard = self.storyboard
+            var loginView = storyboard?.instantiateViewControllerWithIdentifier("LoginViewController") as LoginViewController
+            self.pushViewController(loginView, animated: false)
             self.setNavigationBarHidden(true, animated: false)
             
         }

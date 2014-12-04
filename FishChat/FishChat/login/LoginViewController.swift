@@ -17,11 +17,9 @@ class LoginViewController: UIViewController {
     
     
     @IBAction func onLogin(sender: AnyObject) {
-//        self.performSegueWithIdentifier("toRecent", sender: self)
         println("click login.")
         let parent = self.parentViewController as UINavigationController
         parent.popViewControllerAnimated(false)
-//        parent.popToRootViewControllerAnimated(false)
         parent.setNavigationBarHidden(false, animated: false)
         
     }
